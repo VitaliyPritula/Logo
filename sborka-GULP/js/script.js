@@ -28,7 +28,7 @@ var isMobile = {
 if (isMobile.any()) {
   document.querySelector('body').classList.add('_touch');
 }
-const btn = document.querySelector(".button");
+// const btn = document.querySelector(".button");
 const modal = document.querySelector(".modal");
 const darken = document.querySelector(".darken");
 

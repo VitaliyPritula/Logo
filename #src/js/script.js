@@ -1,5 +1,5 @@
 @@include('../js/function.js', {})
-@@include('../js/popup.js', {})
+// @@include('../js/popup.js', {})
 @@include('../js/burger.js', {})
 @@include('../js/dynamicAdapt.js', {})
 @@include('../js/swiper.js', {})
