@@ -1,0 +1,84 @@
+.swiper-list {
+  background-color: #333;
+}
+
+.swiper-wrapper {
+  width: 800px;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.image-swiper {
+  padding: 50px 0 70px 0px;
+}
+.swiper-slide img {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  // height: 100%;
+  // object-fit: cover;
+}
+
+// стрелки слайдера свайп
+.image-swiper .swiper-button-prev::after,
+.image-swiper .swiper-button-next::after {
+  color: #fff;
+  font-size: 80px;
+  min-height: 100%;
+}
+
+// пагинация слайдера свайп
+.image-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+// буддеты
+.image-swiper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.image-swiper .swiper-pagination-fraction {
+  font-size: 20px;
+  color: #fff;
+}
+
+.image-swiper .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: #fff;
+}
+// автоширина слайда
+// .image-swiper .swiper-slide{
+//   width: auto;
+// }
+
+// .image-swiper {
+//   height: 700px;
+//   .swiper-wrapper{
+//     height: calc((100% - 30px) / 2);
+//     overflow: hidden;
+//   }
+//}
+
+// вертикальный слайдер
+// .image-swiper {
+//   padding: 0px 0px 0px 0px;
+//   height: 700px;
+// }
+
+// эфект куб
+// .image-swiper {
+//   width: 500px;
+//   img{
+//     text-align: center;
+//   }
+// }

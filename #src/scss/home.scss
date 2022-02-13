@@ -1,0 +1,203 @@
+.swiper{
+  margin-bottom: calc(70px + (0 - 20) * ((100vw - 320px) / (1180 -320)));
+}
+.mainSlider {
+
+  &__slide {
+    position: relative;
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+
+  }
+ &__dotts{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  z-index: 2;
+  margin: -27.5px 0px 0px 0px;
+  justify-content: center;
+  counter-reset: item;
+  .swiper-pagination-bullet{
+    margin: 0 23px;
+    
+    opacity: 9;
+    color:none;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius:50%;
+    border: 2px solid#fff;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &::after {
+      opacity: 0;
+      transition: all 0.3s ease 0s;
+      color:#fffefe;
+      position: absolute;
+      font-size: 16px;
+      font-weight: 900;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      background-color:#f68038;
+      align-items: center;
+      counter-increment: item;
+      content: counter(item);
+    }
+  } 
+  .swiper-pagination-bullet-active{
+    &::after {
+      opacity: 1;
+    }
+
+  }
+}
+.content-mainSlider {
+  padding: 20px 35px 60px 35px;
+  @media (max-width: 640px){
+    padding: 20px 35px 60px 15px;
+  }
+  &__title {
+    color: #333;
+    font-size: calc(28px + (48 - 20) * ((100vw - 320px) / (1180 -320)));
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height:  43 / 48 * 100%;  
+    margin: 0px 0px 50px 0px;
+
+    span {
+      display: block;
+      color: rgb(246, 128, 56);
+    }    
+  }
+
+  // &__text {
+  // }
+
+  &__footer {
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+  }
+
+  &__price {
+    color:#fff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 24 / 36 * 100%;
+    margin: 0px 0px 24px 0px;
+    &::after {
+      font-size: 30px;  
+      margin: 0px 0px 0px 10px;       
+    }
+    &:last-child{
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__button {
+    height: 33px;
+    border:3px solid #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    padding: 0 25px;
+    span {
+      font-size: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color:#fff;
+      padding: 0px 30px 0px 0px;
+      background:url("../img/icon/btn_arrow.png") right no-repeat;
+    }
+  }
+}
+.text-mainSlider {
+  color:#333;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 24 / 14 * 100%;
+  text-transform: uppercase;
+  
+  &__text-1 {
+    font-size: 18px;
+    color: #f68038;
+  }
+
+  &__text-2 {
+    color:#fff;
+    line-height: 1;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #92918e;
+  }
+
+  &__text-3 {
+    color: #979797;;
+  }
+}
+}
+// .products-slider__header
+.products-slider{
+  &__header{
+    display: flex;
+    margin: 0px 0px 30px 0px;
+  }
+  // .products-slider__title
+  &__title{
+    flex: 1 1 auto;
+    color: #dadada;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    margin-bottom: 30px;
+  }
+    // .products-slider__control
+  &__control {
+    display: flex;
+    align-items: center;
+  }
+  // .products-slider__arrow
+  &__arrow {
+    background:url("../img/icon/sl_arrow-right.svg") 0 0 no-repeat;
+    display: block;
+    width: 33px;
+    height: 28px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    @media (min-width: 992px){
+      &:hover{
+        background:url("../img/icon/sl_arrow-left.svg") 0 0 no-repeat;
+      }
+    }
+    
+    // .products-slider__arrow_prev
+    &_prev {
+      @media (min-width: 992px){
+        &:hover{
+          transform: rotate(0deg);
+        }
+      } 
+    }
+    // .products-slider__arrow_next
+    &_next {
+      transform: rotate(0deg);
+      @media (min-width: 992px){
+        &:hover{
+          transform: rotate(180deg);
+        }
+			}
+		}
+  }
+  // .products-slider__info
+  &__info {
+    padding: 0 20px;
+  }
+}
