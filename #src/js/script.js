@@ -72,7 +72,7 @@ var swiper = new Swiper(".mainSlider", {
     // буллеты (точки слайдеров)
     clickable: true,	
   },
-  speed: false,	
+  speed: 800,	
 });
 
 if (document.querySelector('.mainSlider')) {

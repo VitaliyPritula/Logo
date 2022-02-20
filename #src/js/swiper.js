@@ -2,14 +2,16 @@
 var swiper = new Swiper("._swiper", {
   // стрелки
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    // nextEl: ".swiper-button-next",
+    // prevEl: ".swiper-button-prev",
+    nextEl: ".products-slider__arrow_next",
+    prevEl: ".products-slider__arrow_prev",
   },
   // навигация
   // буллеты, текущее положение, прогрессбар
   pagination: {
-    el: ".mainSlider__dotts",
-    true: "bullets",
+    el: ".products-slider__info",
+    // true: "bullets",
     // буллеты (точки слайдеров)
     clickable: true,
 
@@ -22,8 +24,8 @@ var swiper = new Swiper("._swiper", {
     // },
 
     //фракция (cлайд дроб 1/6)
-    // type: "fraction",
-    // // кастомный вывод фракции (фото 1 из 6)
+    type: "fraction",
+    // кастомный вывод фракции (фото 1 из 6)
     // renderFraction: function (currentClass, totalClass) {
     //   return (
     //     'фото <span class="' +
@@ -35,7 +37,7 @@ var swiper = new Swiper("._swiper", {
     //     '"></span>'
     //   );
     // },
-    // // прогрессбар
+    // прогрессбар
     // type: 'progressbar'
   },
 
@@ -80,7 +82,7 @@ var swiper = new Swiper("._swiper", {
   // },
 
   // Автовысота слайда
-  // autoHeight: false,
+  autoHeight: true,
 
   // количество слайдов для показа
   // slidesPerView: 1,
@@ -110,14 +112,14 @@ var swiper = new Swiper("._swiper", {
   // свободный режим
   // freeMode: true,
   // скорость слайда
-  speed: false,
+  speed: 800,
   // Автопрокрутка слайдера
   // autoplay: {
   //   пауза между прокруткой
   //   delay: 10000,
   //   закончить на посдедним слайде
   //   stopOnLastSlide: true,
-    // отключить после ручного переключение
+  // отключить после ручного переключение
   //   disableOnInteraction: false,
   // },
 
