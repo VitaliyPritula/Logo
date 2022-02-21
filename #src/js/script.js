@@ -71,7 +71,8 @@ var swiper = new Swiper(".mainSlider", {
     true: "bullets",
     // буллеты (точки слайдеров)
     clickable: true,	
-  },
+	},
+	autoplay:true,
   speed: 800,	
 });
 
@@ -91,17 +92,26 @@ if (document.querySelector('.products-slider')) {
   navigation: {
 		prevEl: '.products-slider__arrow_prev',
     nextEl: '.products-slider__arrow_next',
-  },	
-	
+  },		
 		speed: false,	
 	});	
 }
 
-
-
-
-
-
-
-
-
+var swiper = new Swiper(".brandsSlider", {
+  
+  // навигация
+  navigation: {
+		prevEl: '.brands-slider__arrow_prev',
+    nextEl: '.brands-slider__arrow_next',
+  }, 
+	// pagination: {
+    
+  //   clickable: true,	
+	// },
+	slidesPerView: 5,
+	// количество пролистываемых слайдов
+	// slidesPerGroup: 1,
+	loop: true,
+	autoplay:true,
+  speed: 800,	
+});

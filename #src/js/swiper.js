@@ -85,7 +85,7 @@ var swiper = new Swiper("._swiper", {
   autoHeight: true,
 
   // количество слайдов для показа
-  // slidesPerView: 1,
+  slidesPerView: 1,
   // slidesPerView: 'auto',
 
   // отключение функционала если слайдов менше чем нужна
