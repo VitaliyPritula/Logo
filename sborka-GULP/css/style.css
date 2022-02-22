@@ -221,7 +221,7 @@
   display: flex;
 }
 
-/*=============================================================================================================*/
+/*====brands-slider=====================================================================================================*/
 
 .brands-slider {
   border-top: 5px dashed #dadada;
@@ -231,6 +231,16 @@
 
 .brands-slider__container {
   position: relative;
+}
+
+.brands-slider .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brands-slider__body {
@@ -250,14 +260,31 @@
   transition: all 0.3s ease 0s;
 }
 
+.brands-slider__body img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .brands-slider__slide {
   text-align: center;
   padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brands-slider__arrow {
   position: absolute;
-  top: 0%;
+  top: 30%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
 }
 
 .brands-slider__arrow_prev {
@@ -266,6 +293,80 @@
 
 .brands-slider__arrow_next {
   right: 0;
+}
+
+/*===text-block==================================================================================================*/
+
+.text-block__body {
+  padding: 45px 45px 0;
+  background: url("../img/bg_kompaniya.png");
+}
+
+.text-block__ttitle {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #22b7ca;
+  text-transform: uppercase;
+  margin: 0px 0px 28px 0px;
+}
+
+.text-block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -30px;
+}
+
+.text-block__column {
+  padding: 0px 30px 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  color: #ffffff;
+  position: relative;
+}
+
+.text-block__column p {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.text-block__column p:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.text-block__label {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0px 0px 20px 0px;
+}
+
+.text-block__list li {
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
+.text-block__list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.text-block__list li::before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0px 17px 0px 7px;
+  background: url("../img/icon/li-arrow.png") left 1px no-repeat;
+}
+
+.text-block__image {
+  position: absolute;
+  right: -130px;
+  bottom: -255px;
 }
 
 .header {
@@ -907,6 +1008,10 @@ main {
 
 .page__news-side:last-child {
   margin: 0px 0px 0px 0px;
+}
+
+.page__brands {
+  margin: 0px 0px 32px 0px;
 }
 
 /*=============================================================================================================*/
@@ -1695,11 +1800,6 @@ main {
 }
 
 @media (min-width: 992px) {
-  .brands-slider__body img:hover {
-    -webkit-filter: none;
-            filter: none;
-  }
-
   .menu__link:hover {
     border-radius: 20px;
     background-color: #068292;

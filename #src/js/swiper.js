@@ -149,9 +149,9 @@ var swiper = new Swiper("._swiper", {
   //   limitRotation: true,
   // },
 
-  // // эффект переключение слайда куб
+  // эффект переключение слайда куб
   // effect: "cube",
-  // // дополнение к cube
+  // дополнение к cube
   // cubeEffect: {
   //   slideShadows: true,
   //   shadow: true,

@@ -381,9 +381,9 @@ var swiper = new Swiper("._swiper", {
   //   limitRotation: true,
   // },
 
-  // // эффект переключение слайда куб
+  // эффект переключение слайда куб
   // effect: "cube",
-  // // дополнение к cube
+  // дополнение к cube
   // cubeEffect: {
   //   slideShadows: true,
   //   shadow: true,
@@ -506,15 +506,25 @@ var swiper = new Swiper(".brandsSlider", {
   navigation: {
 		prevEl: '.brands-slider__arrow_prev',
     nextEl: '.brands-slider__arrow_next',
-  }, 
-	// pagination: {
-    
-  //   clickable: true,	
-	// },
-	slidesPerView: 5,
-	// количество пролистываемых слайдов
-	// slidesPerGroup: 1,
+	}, 
+	
 	loop: true,
-	autoplay:true,
-  speed: 800,	
+	breakpoints: {
+    320: {
+      slidesPerView: 1,
+		},
+		400: {
+      slidesPerView: 2,
+    },
+   	500: {
+      slidesPerView: 3,
+    },
+		768: {
+			slidesPerView: 4,
+		},
+		992: {
+			slidesPerView: 5,
+		},
+  },
+ 
 });
