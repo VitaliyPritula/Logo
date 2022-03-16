@@ -46,3 +46,52 @@ input {
     }
   }
 }
+.checkbox {
+  position: relative;
+  &__input{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    &:checked + .checkbox__text::before{
+      border: 2px solid #809aaf;
+    }
+    &:checked + .checkbox__text::after{
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 5px;
+      width: 9px;
+      height: 9px;
+      border: 2px solid #53b5de;
+      background-color:#53b5de;
+    }
+  }
+  // .checkbox__text
+  &__text{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    color:#666;
+    line-height: calc(15 / 12);
+    cursor: pointer;
+    &::before{
+      content: '';
+      position: absolute;
+      align-self: flex-start;
+      margin: 0px 14px 0px 0px;
+      flex: 0 0 12px;
+      left: 0;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border: 2px solid #dadada;
+    }
+    span{
+      margin: 0px 0px 0px 35px;
+    }
+  }
+}

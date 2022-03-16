@@ -611,7 +611,7 @@ main {
   visibility: hidden;
 }
 .checkbox__input:checked + .checkbox__text::before {
-  background: #fff url("../img/icon/check.svg") center no-repeat;
+  // background: #fff url("../img/icon/check.svg") center no-repeat;
 }
 .checkbox__text {
   display: inline-block;

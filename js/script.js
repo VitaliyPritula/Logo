@@ -539,3 +539,5 @@ function setPriceValues() {
   }
   priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
 }
+/*=============================================================================================================*/
+// spoller

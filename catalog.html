@@ -2,1142 +2,1374 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог</title>
-  <link rel="shortcut icon" href="img/header/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/nouislider.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+	<link rel="shortcut icon" href="img/header/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__top top-header">
-        <div class="top-header__container __container">
-          <div class="top-header__column">
-            <div class="top-header__menu menu">
-              <div class="menu__icon icon-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li><a href="swiper.html" class="menu__link">Бренды</a></li>
-                  <li><a href="popup.html" class="menu__link">Распродажа</a></li>
-                  <li><a href="" class="menu__link">Доставка и Сборка</a></li>
-                  <li><a href="" class="menu__link">Гарантия</a></li>
-                  <li><a href="" class="menu__link">Оплата</a></li>
-                  <li><a href="" class="menu__link">Контакты</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="top-header__column top-header__column__logo">
-            <a href="" class="top-header__logo"><img src="img/header/logo.png" alt=""></a>
-          </div>
-          <div class="top-header__column">
-            <div class="top-header__contacts contacts-header">
-              <div class="contacts-header__column">
-                <div class="contacts-header__item contacts-header__item_icon">
-                  <div class="contacts-header__label">Москва</div>
-                  <a href="tel:84991234567" class="contacts-header__phone">8-499-123-45-67</a>
-                </div>
-              </div>
-              <div class="contacts-header__column contacts-header__column_forcart">
-                <div class="contacts-header__item contacts-header__item_second-phone">
-                  <div class="contacts-header__label">Бесплатно для России</div>
-                  <a href="tel:88001234567" class="contacts-header__phone">8-800-123-45-67</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__botton botton-header">
-        <div class="botton-header__container __container">
-          <div class="botton-header__row">
-            <div class="botton-header__column">
-              <ul data-da=".menu__body, 640, 0" class="botton-header__actions actions-header">
-                <li><a href="" class="actions-header__item actions-header__item_login"><span>Вход</span></a></li>
-                <li><a href="" class="actions-header__item actions-header__item_reg"><span>Регистрация</span></a></li>
-                <li><a href="mailto:sport@gmail.com"
-                    class="actions-header__item actions-header__item_email"><span>sport@gmail.com</span></a></li>
-              </ul>
-            </div>
-            <div class="botton-header__column">
-              <div class="actions-header__info info-header">
-                <div class="info-header__column">
-                  <a data-da=".menu__list, 640,8" class="info-header__calback"><span>Обратный звонок</span></a>
-                </div>
-                <div class="info-header__column">
-                  <div class="info-header__shedule">
-                    <p><span>Пн–Пт:</span> 09:00–21:00;</p>
-                    <p><span>Сб–Вс:</span> 10:00–20:00</p>
-                  </div>
-                </div>
-                <div data-da=".contacts-header__column_forcart, 640, 2" class="info-header__column">
-                  <a class="info-header__cart">
-                    <span>12</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="page">
-      <div class="page__container __container">
-        <aside class="page__side">
-          <nav class="page__menu menu-page">
-            <div class="menu-page__header">
-              <div class="menu-page__title">Каталог товаров</div>
-              <div class="menu-page__burger">
-                <div class="menu-page__lines">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-            <div class="menu-page__body">
-              <ul class="menu-page__list">
-                <li class="menu-page__parent">
-                  <a href="" class="menu-page__link menu-page__link_parent">Беговые дорожки</a>
-                  <div class="menu-page__submenu submenu-page">
-                    <div class="submenu-page__item">
-                      <ul class="submenu-page__menu">
-                        <li><a href="" class="submenu-page__link">Всепогодный</a></li>
-                        <li><a href="" class="submenu-page__link">Для помещений</a></li>
-                        <li><a href="" class="submenu-page__link">Профессиональный</a></li>
-                        <li><a href="" class="submenu-page__link">Любительский</a></li>
-                      </ul>
-                      <div class="submenu-page__product">
-                        <div class="item-product">
-                          <div class="item-product__labels">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container __container">
+					<div class="top-header__column">
+						<div class="top-header__menu menu">
+							<div class="menu__icon icon-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li><a href="swiper.html" class="menu__link">Бренды</a></li>
+									<li><a href="popup.html" class="menu__link">Распродажа</a></li>
+									<li><a href="" class="menu__link">Доставка и Сборка</a></li>
+									<li><a href="" class="menu__link">Гарантия</a></li>
+									<li><a href="" class="menu__link">Оплата</a></li>
+									<li><a href="" class="menu__link">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="top-header__column top-header__column__logo">
+						<a href="" class="top-header__logo"><img src="img/header/logo.png" alt=""></a>
+					</div>
+					<div class="top-header__column">
+						<div class="top-header__contacts contacts-header">
+							<div class="contacts-header__column">
+								<div class="contacts-header__item contacts-header__item_icon">
+									<div class="contacts-header__label">Москва</div>
+									<a href="tel:84991234567" class="contacts-header__phone">8-499-123-45-67</a>
+								</div>
+							</div>
+							<div class="contacts-header__column contacts-header__column_forcart">
+								<div class="contacts-header__item contacts-header__item_second-phone">
+									<div class="contacts-header__label">Бесплатно для России</div>
+									<a href="tel:88001234567" class="contacts-header__phone">8-800-123-45-67</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__botton botton-header">
+				<div class="botton-header__container __container">
+					<div class="botton-header__row">
+						<div class="botton-header__column">
+							<ul data-da=".menu__body, 640, 0" class="botton-header__actions actions-header">
+								<li><a href="" class="actions-header__item actions-header__item_login"><span>Вход</span></a>
+								</li>
+								<li><a href="" class="actions-header__item actions-header__item_reg"><span>Регистрация</span></a>
+								</li>
+								<li><a href="mailto:sport@gmail.com"
+										class="actions-header__item actions-header__item_email"><span>sport@gmail.com</span></a>
+								</li>
+							</ul>
+						</div>
+						<div class="botton-header__column">
+							<div class="actions-header__info info-header">
+								<div class="info-header__column">
+									<a data-da=".menu__list, 640,8" class="info-header__calback"><span>Обратный
+											звонок</span></a>
+								</div>
+								<div class="info-header__column">
+									<div class="info-header__shedule">
+										<p><span>Пн–Пт:</span> 09:00–21:00;</p>
+										<p><span>Сб–Вс:</span> 10:00–20:00</p>
+									</div>
+								</div>
+								<div data-da=".contacts-header__column_forcart, 640, 2" class="info-header__column">
+									<a class="info-header__cart">
+										<span>12</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container __container">
+				<aside class="page__side">
+					<nav class="page__menu menu-page">
+						<div class="menu-page__header">
+							<div class="menu-page__title">Каталог товаров</div>
+							<div class="menu-page__burger">
+								<div class="menu-page__lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="menu-page__body">
+							<ul class="menu-page__list">
+								<li class="menu-page__parent">
+									<a href="" class="menu-page__link menu-page__link_parent">Беговые дорожки</a>
+									<div class="menu-page__submenu submenu-page">
+										<div class="submenu-page__item">
+											<ul class="submenu-page__menu">
+												<li><a href="" class="submenu-page__link">Всепогодный</a></li>
+												<li><a href="" class="submenu-page__link">Для помещений</a></li>
+												<li><a href="" class="submenu-page__link">Профессиональный</a></li>
+												<li><a href="" class="submenu-page__link">Любительский</a></li>
+											</ul>
+											<div class="submenu-page__product">
+												<div class="item-product">
+													<div class="item-product__labels">
 
-                          </div>
-                          <a class="item-product__image">
-                            <img src="img/product/01.png" alt="Теннисный стол. Зелёный">
-                          </a>
-                          <div class="item-product__body">
-                            <a class="item-product__title">Домашний теннисный стол Donic Indoor Roller 800 Green</a>
-                            <div class="item-product__footer">
-                              <a href="" class="item-product__add"></a>
-                              <div class="item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-page__parent">
-                  <a href="" class="menu-page__link menu-page__link_parent">Эллиптические тренажеры</a>
-                  <div class="menu-page__submenu submenu-page">
-                    <div class="submenu-page__item">
-                      <ul class="submenu-page__menu">
-                        <li><a href="" class="submenu-page__link">Всепогодный</a></li>
-                        <li><a href="" class="submenu-page__link">Для помещений</a></li>
-                        <li><a href="" class="submenu-page__link">Профессиональный</a></li>
-                        <li><a href="" class="submenu-page__link">Любительский</a></li>
-                      </ul>
-                      <div class="submenu-page__product">
-                        <div class="item-product">
-                          <div class="item-product__labels">
-                            <div class="item-product__label">Товар дня</div>
-                          </div>
-                          <a class="item-product__image">
-                            <img src="img/product/01.png" alt="Теннисный стол. Зелёный">
-                          </a>
-                          <div class="item-product__body">
-                            <a class="item-product__title">Домашний теннисный стол Donic Indoor Roller 800 Green</a>
-                            <div class="item-product__footer">
-                              <a href="" class="item-product__add"></a>
-                              <div class="item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="" class="menu-page__link">Велотренажеры</a></li>
-                <li><a href="" class="menu-page__link">Гребные тренажеры</a></li>
-                <li class="menu-page__parent">
-                  <a class="menu-page__link menu-page__link_parent">Вибромассажеры</a>
-                  <div class="menu-page__submenu submenu-page">
-                    <div class="submenu-page__item">
-                      <ul class="submenu-page__menu">
-                        <li><a href="" class="submenu-page__link">Всепогодный</a></li>
-                        <li><a href="" class="submenu-page__link">Для помещений</a></li>
-                        <li><a href="" class="submenu-page__link">Профессиональный</a></li>
-                        <li><a href="" class="submenu-page__link">Любительский</a></li>
-                      </ul>
-                      <div class="submenu-page__product">
-                        <div class="item-product">
-                          <div class="item-product__labels">
-                          </div>
-                          <a class="item-product__image">
-                            <img src="img/product/01.png" alt="Теннисный стол. Зелёный">
-                          </a>
-                          <div class="item-product__body">
-                            <a class="item-product__title">Домашний теннисный стол Donic Indoor Roller 800 Green</a>
-                            <div class="item-product__footer">
-                              <div class="item-product__old-price rub">64 990</div>
-                              <a href="" class="item-product__add"></a>
-                              <div class="item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="" class="menu-page__link">Теннисные столы</a></li>
-                <li><a href="" class="menu-page__link">Баскетбол</a></li>
-                <li><a href="" class="menu-page__link">Массажные кресла</a></li>
-                <li><a href="" class="menu-page__link">Массажные столы</a></li>
-                <li class="menu-page__parent">
-                  <a href="" class="menu-page__link menu-page__link_parent">Силовые тренажеры</a>
-                  <div class="menu-page__submenu submenu-page">
-                    <div class="submenu-page__item">
-                      <ul class="submenu-page__menu">
-                        <li><a href="" class="submenu-page__link">Всепогодный</a></li>
-                        <li><a href="" class="submenu-page__link">Для помещений</a></li>
-                        <li><a href="" class="submenu-page__link">Профессиональный</a></li>
-                        <li><a href="" class="submenu-page__link">Любительский</a></li>
-                      </ul>
-                      <div class="submenu-page__product">
-                        <div class="item-product">
-                          <div class="item-product__labels">
-                            <div class="item-product__label">Товар дня</div>
-                          </div>
-                          <a class="item-product__image">
-                            <img src="img/product/01.png" alt="Теннисный стол. Зелёный">
-                          </a>
-                          <div class="item-product__body">
-                            <a class="item-product__title">Домашний теннисный стол Donic Indoor Roller 800 Green</a>
-                            <div class="item-product__footer">
-                              <div class="item-product__old-price rub">64 990</div>
-                              <a href="" class="item-product__add"></a>
-                              <div class="item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-page__parent">
-                  <a href="" class="menu-page__link menu-page__link_parent">Батуты</a>
-                </li>
-                <li><a href="" class="menu-page__link">Детские городки</a></li>
-                <li><a href="" class="menu-page__link">Дачная мебель</a></li>
-                <li><a href="" class="menu-page__link">Уличные спортивные комплексы</a></li>
-                <li><a href="" class="menu-page__link">Аксессуары</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="filter">
-            <div class="filter__title">Фильтр товаров</div>
-            <div class="filter__body">
-              <div class="filter__section section-filter">
-                <div class="section-filter__title">Цена (руб.):</div>
-                <div class="section-filter__body">
-                  <div class="price-filter">
-                    <div class="price-filter__slider"></div>
-                    <div class="price-filter__values values-price-filter">
-                      <div class="values-price-filter__column">
-                        <div class="values-price-filter__label">от</div>
-                        <div class="values-price-filter__input">
-                          <input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
-                        </div>
-                      </div>
-                      <div class="values-price-filter__column">
-                        <div class="values-price-filter__label">до</div>
-                        <div class="values-price-filter__input">
-                          <input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <div class="page__content">
-          <form action="#" class="page__search search-page">
-            <div class="search-page__select">
-              <div class="search-page__title"><span>Везде</span><span data-text="Выбрано:"
-                  class="search-page__quantity"></span></div>
-              <div class="search-page__categories categories-search">
-                <div class="categories-search__row">
-                  <div class="categories-search__column">
-                    <ul class="categories-search__list">
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Беговые дорожки</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Эллиптические тренажеры</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Велотренажеры</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Гребные тренажеры</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Вибромассажеры</span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="categories-search__column">
-                    <ul class="categories-search__list">
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Беговые дорожки</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Баскетбольные щиты и стойки</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Массажные кресла</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Массажные столы</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Силовые тренажеры</span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="categories-search__column">
-                    <ul class="categories-search__list">
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Батуты</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Детские городки</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Дачная мебель</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Уличные спортивные комплексы</span></span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="categories-search__checkbox checkbox">
-                          <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                          <span class="checkbox__text"><span>Аксессуары</span></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="search-page__input">
-              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" class="input">
-            </div>
-            <button type="submit" class="search-page__btn btn">Найти</button>
-          </form>
-          <div class="swiper">
-            <div class="mainSlider">
-              <div class="swiper-wrapper">
-                <!-- слайд -->
-                <div class="swiper-slide">
-                  <div class="mainSlider__slide">
-                    <div class="mainSlider__content content-mainSlider">
-                      <div class="content-mainSlider__title">
-                        <span>Мега</span> распродажа
-                      </div>
-                      <div class="content-mainSlider__text text-mainSlider">
-                        <p><span class="text-mainSlider__text-1">Успей купить</span> тренажеры</p>
-                        <p><span class="text-mainSlider__text-2">по старой цене</span></p>
-                        до их <span class="text-mainSlider__text-3">повышения</span>
-                      </div>
-                      <div class="content-mainSlider__footer">
-                        <div class="content-mainSlider__price rub">от 45 00</div>
-                        <a href="" class="content-mainSlider__button">
-                          <span>Подробнее</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="mainSlider__image _ibg">
-                      <img src="img/bj_slider.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainSlider__slide">
-                    <div class="mainSlider__content content-mainSlider">
-                      <div class="content-mainSlider__title">
-                        <span>Мега</span> распродажа
-                      </div>
-                      <div class="content-mainSlider__text text-mainSlider">
-                        <p><span class="text-mainSlider__text-1">Успей купить</span> тренажеры</p>
-                        <p><span class="text-mainSlider__text-2">по старой цене</span></p>
-                        до их <span class="text-mainSlider__text-3">повышения</span>
-                      </div>
-                      <div class="content-mainSlider__footer">
-                        <div class="content-mainSlider__price rub">от 45 00</div>
-                        <a href="" class="content-mainSlider__button">
-                          <span>Подробнее</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="mainSlider__image _ibg">
-                      <img src="img/bj_slider2.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- добавление если нужна пагинация -->
-              <div class="mainSlider__dotts"></div>
-            </div>
-          </div>
-          <div class="page__products products-slider">
-            <div class="products-slider__header">
-              <div class="products-slider__title">Популярные товары</div>
-              <div class="products-slider__control">
-                <div class="products-slider__arrow products-slider__arrow_prev _arrow _arrow_prev"></div>
-                <div class="products-slider__info"></div>
-                <div class="products-slider__arrow products-slider__arrow_next _arrow _arrow_next"></div>
-              </div>
-            </div>
-            <div class="swiper">
-              <div class="_swiper">
-                <div class="swiper-wrapper">
-                  <!-- слайд -->
-                  <div class="swiper-slide">
-                    <div class="products-slider__slide">
-                      <div class="products-slider__items items-products">
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
+													</div>
+													<a class="item-product__image">
+														<img src="img/product/01.png" alt="Теннисный стол. Зелёный">
+													</a>
+													<div class="item-product__body">
+														<a class="item-product__title">Домашний теннисный стол Donic
+															Indoor Roller 800 Green</a>
+														<div class="item-product__footer">
+															<a href="" class="item-product__add"></a>
+															<div class="item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-page__parent">
+									<a href="" class="menu-page__link menu-page__link_parent">Эллиптические
+										тренажеры</a>
+									<div class="menu-page__submenu submenu-page">
+										<div class="submenu-page__item">
+											<ul class="submenu-page__menu">
+												<li><a href="" class="submenu-page__link">Всепогодный</a></li>
+												<li><a href="" class="submenu-page__link">Для помещений</a></li>
+												<li><a href="" class="submenu-page__link">Профессиональный</a></li>
+												<li><a href="" class="submenu-page__link">Любительский</a></li>
+											</ul>
+											<div class="submenu-page__product">
+												<div class="item-product">
+													<div class="item-product__labels">
+														<div class="item-product__label">Товар дня</div>
+													</div>
+													<a class="item-product__image">
+														<img src="img/product/01.png" alt="Теннисный стол. Зелёный">
+													</a>
+													<div class="item-product__body">
+														<a class="item-product__title">Домашний теннисный стол Donic
+															Indoor Roller 800 Green</a>
+														<div class="item-product__footer">
+															<a href="" class="item-product__add"></a>
+															<div class="item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="" class="menu-page__link">Велотренажеры</a></li>
+								<li><a href="" class="menu-page__link">Гребные тренажеры</a></li>
+								<li class="menu-page__parent">
+									<a class="menu-page__link menu-page__link_parent">Вибромассажеры</a>
+									<div class="menu-page__submenu submenu-page">
+										<div class="submenu-page__item">
+											<ul class="submenu-page__menu">
+												<li><a href="" class="submenu-page__link">Всепогодный</a></li>
+												<li><a href="" class="submenu-page__link">Для помещений</a></li>
+												<li><a href="" class="submenu-page__link">Профессиональный</a></li>
+												<li><a href="" class="submenu-page__link">Любительский</a></li>
+											</ul>
+											<div class="submenu-page__product">
+												<div class="item-product">
+													<div class="item-product__labels">
+													</div>
+													<a class="item-product__image">
+														<img src="img/product/01.png" alt="Теннисный стол. Зелёный">
+													</a>
+													<div class="item-product__body">
+														<a class="item-product__title">Домашний теннисный стол Donic
+															Indoor Roller 800 Green</a>
+														<div class="item-product__footer">
+															<div class="item-product__old-price rub">64 990</div>
+															<a href="" class="item-product__add"></a>
+															<div class="item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="" class="menu-page__link">Теннисные столы</a></li>
+								<li><a href="" class="menu-page__link">Баскетбол</a></li>
+								<li><a href="" class="menu-page__link">Массажные кресла</a></li>
+								<li><a href="" class="menu-page__link">Массажные столы</a></li>
+								<li class="menu-page__parent">
+									<a href="" class="menu-page__link menu-page__link_parent">Силовые тренажеры</a>
+									<div class="menu-page__submenu submenu-page">
+										<div class="submenu-page__item">
+											<ul class="submenu-page__menu">
+												<li><a href="" class="submenu-page__link">Всепогодный</a></li>
+												<li><a href="" class="submenu-page__link">Для помещений</a></li>
+												<li><a href="" class="submenu-page__link">Профессиональный</a></li>
+												<li><a href="" class="submenu-page__link">Любительский</a></li>
+											</ul>
+											<div class="submenu-page__product">
+												<div class="item-product">
+													<div class="item-product__labels">
+														<div class="item-product__label">Товар дня</div>
+													</div>
+													<a class="item-product__image">
+														<img src="img/product/01.png" alt="Теннисный стол. Зелёный">
+													</a>
+													<div class="item-product__body">
+														<a class="item-product__title">Домашний теннисный стол Donic
+															Indoor Roller 800 Green</a>
+														<div class="item-product__footer">
+															<div class="item-product__old-price rub">64 990</div>
+															<a href="" class="item-product__add"></a>
+															<div class="item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-page__parent">
+									<a href="" class="menu-page__link menu-page__link_parent">Батуты</a>
+								</li>
+								<li><a href="" class="menu-page__link">Детские городки</a></li>
+								<li><a href="" class="menu-page__link">Дачная мебель</a></li>
+								<li><a href="" class="menu-page__link">Уличные спортивные комплексы</a></li>
+								<li><a href="" class="menu-page__link">Аксессуары</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="filter">
+						<div class="filter__title">Фильтр товаров</div>
+						<div class="filter__body">
+							<div class="filter__section section-filter">
+								<div class="section-filter__title">Цена (руб.):</div>
+								<div class="section-filter__body">
+									<div class="price-filter">
+										<div class="price-filter__slider"></div>
+										<div class="price-filter__values values-price-filter">
+											<div class="values-price-filter__column">
+												<div class="values-price-filter__label">от</div>
+												<div class="values-price-filter__input">
+													<input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
+												</div>
+											</div>
+											<div class="values-price-filter__column">
+												<div class="values-price-filter__label">до</div>
+												<div class="values-price-filter__input">
+													<input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter__section section-filter">
+								<div class="section-filter__title">Товары для сравнения</div>
+								<div class="section-filter__body">
+									<div class="compare-filter">
+										<div class="compare-filter__items">
+											<div class="compare-filter__item">
+												<a href="" class="compare-filter__link">NordicTrack C100</a>
+												<a href="" class="compare-filter__remove"></a>
+											</div>
+											<div class="compare-filter__item">
+												<a href="" class="compare-filter__link">Clear Fit Luxury LT.20</a>
+												<a href="" class="compare-filter__remove"></a>
+											</div>
+											<div class="compare-filter__item">
+												<a href="" class="compare-filter__link">Ammity ATM 720 TFT+</a>
+												<a href="" class="compare-filter__remove"></a>
+											</div>
+										</div>
+										<div class="compare-filter__footer">
+											<a href="" class="compare-filter__button"><span>Сравнить</span></a>
+											<a href="" class="compare-filter__clean"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="filter__section section-filter">
+								<div data-spoller class="section-filter__title __spoller">Производитель</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>Сlear-fit</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>Diadora</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>Hasttings</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>Carbon-fitness</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>Nordic Track</span></span>
+									</label>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="filter__section section-filter">
+								<div data-spoller class="section-filter__title __spoller">Мощность двигателя:</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>12</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>14</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>16</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>18</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>20</span></span>
+									</label>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="filter__section section-filter">
+								<div data-spoller class="section-filter__title __spoller">Размер бегового полотна</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>12</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>14</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>16</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>18</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>20</span></span>
+									</label>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="filter__section section-filter">
+								<div data-spoller class="section-filter__title __spoller">Вес пользователя (макс.):</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>12</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>14</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>16</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>18</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>20</span></span>
+									</label>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="filter__section section-filter">
+								<div data-spoller class="section-filter__title __spoller">Скорость (макс.):</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>12</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>14</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>16</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>18</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>20</span></span>
+									</label>
+								</div>
+							</div>
+							<div class="filter__section section-filter">
+								<div class="section-filter__title">Угол наклона :</div>
+								<div class="section-filter__body">
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>нет регурировки</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>механическая</span></span>
+									</label>
+									<label class="section-filter__checkbox checkbox">
+										<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<span class="checkbox__text"><span>элестронная</span></span>
+									</label>
+								</div>
+							</div>
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="products-slider__slide">
-                      <div class="products-slider__items items-products">
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item-products__column">
-                          <div class="item-product">
-                            <div class="item-product__labels"></div>
-                            <a class="item-product__image">
-                              <img src="img/product/02.png" alt="Беговая дорожка. чёрный">
-                            </a>
-                            <div class="item-product__body">
-                              <a class="item-product__title">
-                                <span>BH Fitness F1 G6414V</span>
-                                Беговая дорожка
-                              </a>
-                              <div class="item-product__footer">
-                                <div class="item-product__old-price rub">65 990</div>
-                                <a href="" class="item-product__add"></a>
-                                <div class="item-product__price rub">64 990</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item-product__hover hover-item-product">
-                            <a href="" class="hover-item-product__title">
-                              <span>BH Fitness F1 G6414V</span>Беговая дорожкa
-                            </a>
-                            <div class="hover-item-product__options options-item-product">
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Тип беговой дорожки:</div>
-                                <div class="options-item-product__value">Электрическая</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Скорость движения (км/ч):</div>
-                                <div class="options-item-product__value">22</div>
-                              </div>
-                              <div class="options-item-product__item">
-                                <div class="options-item-product__label">Складывание:</div>
-                                <div class="options-item-product__value">Есть</div>
-                              </div>
-                            </div>
-                            <div class="hover-item-product__body">
-                              <a class="hover-item-product__cart"></a>
-                            </div>
-                            <div class="hover-item-product__footer">
-                              <div class="hover-item-product__old-price rub">65 990</div>
-                              <div class="hover-item-product__stock">в наличии</div>
-                              <div class="hover-item-product__price rub">64 990</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+						</div>
+					</div>
+				</aside>
+				<div class="page__content">
+					<form action="#" class="page__search search-page">
+						<div class="search-page__select">
+							<div class="search-page__title"><span>Везде</span><span data-text="Выбрано:"
+									class="search-page__quantity"></span></div>
+							<div class="search-page__categories categories-search">
+								<div class="categories-search__row">
+									<div class="categories-search__column">
+										<ul class="categories-search__list">
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Беговые дорожки</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Эллиптические
+															тренажеры</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Велотренажеры</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Гребные тренажеры</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Вибромассажеры</span></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="categories-search__column">
+										<ul class="categories-search__list">
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Беговые дорожки</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Баскетбольные щиты и
+															стойки</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Массажные кресла</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Массажные столы</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Силовые тренажеры</span></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="categories-search__column">
+										<ul class="categories-search__list">
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Батуты</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Детские городки</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Дачная мебель</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Уличные спортивные
+															комплексы</span></span>
+												</label>
+											</li>
+											<li>
+												<label class="categories-search__checkbox checkbox">
+													<input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<span class="checkbox__text"><span>Аксессуары</span></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-page__input">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" class="input">
+						</div>
+						<button type="submit" class="search-page__btn btn">Найти</button>
+					</form>
+					<div class="swiper">
+						<div class="mainSlider">
+							<div class="swiper-wrapper">
+								<!-- слайд -->
+								<div class="swiper-slide">
+									<div class="mainSlider__slide">
+										<div class="mainSlider__content content-mainSlider">
+											<div class="content-mainSlider__title">
+												<span>Мега</span> распродажа
+											</div>
+											<div class="content-mainSlider__text text-mainSlider">
+												<p><span class="text-mainSlider__text-1">Успей купить</span> тренажеры
+												</p>
+												<p><span class="text-mainSlider__text-2">по старой цене</span></p>
+												до их <span class="text-mainSlider__text-3">повышения</span>
+											</div>
+											<div class="content-mainSlider__footer">
+												<div class="content-mainSlider__price rub">от 45 00</div>
+												<a href="" class="content-mainSlider__button">
+													<span>Подробнее</span>
+												</a>
+											</div>
+										</div>
+										<div class="mainSlider__image _ibg">
+											<img src="img/bj_slider.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="mainSlider__slide">
+										<div class="mainSlider__content content-mainSlider">
+											<div class="content-mainSlider__title">
+												<span>Мега</span> распродажа
+											</div>
+											<div class="content-mainSlider__text text-mainSlider">
+												<p><span class="text-mainSlider__text-1">Успей купить</span> тренажеры
+												</p>
+												<p><span class="text-mainSlider__text-2">по старой цене</span></p>
+												до их <span class="text-mainSlider__text-3">повышения</span>
+											</div>
+											<div class="content-mainSlider__footer">
+												<div class="content-mainSlider__price rub">от 45 00</div>
+												<a href="" class="content-mainSlider__button">
+													<span>Подробнее</span>
+												</a>
+											</div>
+										</div>
+										<div class="mainSlider__image _ibg">
+											<img src="img/bj_slider2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- добавление если нужна пагинация -->
+							<div class="mainSlider__dotts"></div>
+						</div>
+					</div>
+					<div class="page__products products-slider">
+						<div class="products-slider__header">
+							<div class="products-slider__title">Популярные товары</div>
+							<div class="products-slider__control">
+								<div class="products-slider__arrow products-slider__arrow_prev _arrow _arrow_prev">
+								</div>
+								<div class="products-slider__info"></div>
+								<div class="products-slider__arrow products-slider__arrow_next _arrow _arrow_next">
+								</div>
+							</div>
+						</div>
+						<div class="swiper">
+							<div class="_swiper">
+								<div class="swiper-wrapper">
+									<!-- слайд -->
+									<div class="swiper-slide">
+										<div class="products-slider__slide">
+											<div class="products-slider__items items-products">
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
 
-      <div class="page__info-menu info-menu">
-        <div class="info-menu__container __container">
-          <div class="info-menu__body">
-            <div class="info-menu__line">
-              <div class="info-menu__label">Информация:</div>
-              <ul class="info-menu__list">
-                <li><a href="" class="info-menu__link">Бренды</a></li>
-                <li><a href="" class="info-menu__link">Доставка</a></li>
-                <li><a href="" class="info-menu__link">Распродажа</a></li>
-                <li><a href="" class="info-menu__link">Контакты</a></li>
-                <li><a href="" class="info-menu__link">Отзывы</a></li>
-              </ul>
-            </div>
-            <div class="info-menu__line">
-              <div class="info-menu__label">Помощь:</div>
-              <ul class="info-menu__list">
-                <li><a href="" class="info-menu__link">Как заказать</a></li>
-                <li><a href="" class="info-menu__link">Доставка</a></li>
-                <li><a href="" class="info-menu__link">Оплата</a></li>
-                <li><a href="" class="info-menu__link">Гарантия и сборка</a></li>
-                <li><a href="" class="info-menu__link">Возврат</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="products-slider__slide">
+											<div class="products-slider__items items-products">
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-products__column">
+													<div class="item-product">
+														<div class="item-product__labels"></div>
+														<a class="item-product__image">
+															<img src="img/product/02.png" alt="Беговая дорожка. чёрный">
+														</a>
+														<div class="item-product__body">
+															<a class="item-product__title">
+																<span>BH Fitness F1 G6414V</span>
+																Беговая дорожка
+															</a>
+															<div class="item-product__footer">
+																<div class="item-product__old-price rub">65 990</div>
+																<a href="" class="item-product__add"></a>
+																<div class="item-product__price rub">64 990</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-product__hover hover-item-product">
+														<a href="" class="hover-item-product__title">
+															<span>BH Fitness F1 G6414V</span>Беговая дорожкa
+														</a>
+														<div class="hover-item-product__options options-item-product">
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Тип беговой
+																	дорожки:</div>
+																<div class="options-item-product__value">Электрическая
+																</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Скорость
+																	движения (км/ч):</div>
+																<div class="options-item-product__value">22</div>
+															</div>
+															<div class="options-item-product__item">
+																<div class="options-item-product__label">Складывание:
+																</div>
+																<div class="options-item-product__value">Есть</div>
+															</div>
+														</div>
+														<div class="hover-item-product__body">
+															<a class="hover-item-product__cart"></a>
+														</div>
+														<div class="hover-item-product__footer">
+															<div class="hover-item-product__old-price rub">65 990</div>
+															<div class="hover-item-product__stock">в наличии</div>
+															<div class="hover-item-product__price rub">64 990</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <footer class="footer">
-      <div class="footer__container __container">
-        <div class="footer__body">
-          <div class="footer__column">
-            <div class="footer__block block-footer">
-              <div class="block-footer__column">
-                <a href="" class="logo-footer">
-                  <img src="img/Logo-footer.jpg" alt="Logo-footer">
-                </a>
-                <div class="block-footer__phones">
-                  <p><a href="tel:84991234567" class="block-footer__phone">8-499-123-45-67</a></p>
-                  <p><a href="tel:84991234567" class="block-footer__phone">8-499-123-45-67</a></p>
-                </div>
-              </div>
-              <div class="block-footer__column">
-                <div class="block-footer__delivery delivery-footer">
-                  <div class="delivery-footer__title">Доставка транспортными компаниями:</div>
-                  <div class="delivery-footer__items">
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/01.png" alt="">
-                    </div>
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/02.png" alt="">
-                    </div>
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/03.png" alt="">
-                    </div>
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/04.png" alt="">
-                    </div>
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/05.png" alt="">
-                    </div>
-                    <div class="delivery-footer__item">
-                      <img src="img/delivery-img/06.png" alt="">
-                    </div>
-                  </div>
+			<div class="page__info-menu info-menu">
+				<div class="info-menu__container __container">
+					<div class="info-menu__body">
+						<div class="info-menu__line">
+							<div class="info-menu__label">Информация:</div>
+							<ul class="info-menu__list">
+								<li><a href="" class="info-menu__link">Бренды</a></li>
+								<li><a href="" class="info-menu__link">Доставка</a></li>
+								<li><a href="" class="info-menu__link">Распродажа</a></li>
+								<li><a href="" class="info-menu__link">Контакты</a></li>
+								<li><a href="" class="info-menu__link">Отзывы</a></li>
+							</ul>
+						</div>
+						<div class="info-menu__line">
+							<div class="info-menu__label">Помощь:</div>
+							<ul class="info-menu__list">
+								<li><a href="" class="info-menu__link">Как заказать</a></li>
+								<li><a href="" class="info-menu__link">Доставка</a></li>
+								<li><a href="" class="info-menu__link">Оплата</a></li>
+								<li><a href="" class="info-menu__link">Гарантия и сборка</a></li>
+								<li><a href="" class="info-menu__link">Возврат</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container __container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="footer__block block-footer">
+							<div class="block-footer__column">
+								<a href="" class="logo-footer">
+									<img src="img/Logo-footer.jpg" alt="Logo-footer">
+								</a>
+								<div class="block-footer__phones">
+									<p><a href="tel:84991234567" class="block-footer__phone">8-499-123-45-67</a></p>
+									<p><a href="tel:84991234567" class="block-footer__phone">8-499-123-45-67</a></p>
+								</div>
+							</div>
+							<div class="block-footer__column">
+								<div class="block-footer__delivery delivery-footer">
+									<div class="delivery-footer__title">Доставка транспортными компаниями:</div>
+									<div class="delivery-footer__items">
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/01.png" alt="">
+										</div>
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/02.png" alt="">
+										</div>
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/03.png" alt="">
+										</div>
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/04.png" alt="">
+										</div>
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/05.png" alt="">
+										</div>
+										<div class="delivery-footer__item">
+											<img src="img/delivery-img/06.png" alt="">
+										</div>
+									</div>
 
-                </div>
-              </div>
-            </div>
-            <div class="footer__payments">
-              <img src="img/icon/social-play.png" alt="">
-            </div>
-          </div>
-          <div class="footer__column">
-            <div class="footer__widgets widgets-footer">
-              <div class="widgets-footer__column">
-                <img src="img/social-img.png" alt="">
-              </div>
-              <div class="widgets-footer__column">
-                <img src="img/social-img.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__botton">
-          <div class="footer__copy">©2015 Все права защищены.</div>
-          <div class="footer__social social-footer">
-            <a href="" class="social-footer__item">
-              <img src="img/icon/vk.png" alt="">
-            </a>
-            <a href="" class="social-footer__item">
-              <img src="img/icon/facebook.png" alt="">
-            </a>
-            <a href="" class="social-footer__item">
-              <img src="img/icon/instagram.png" alt="">
-            </a>
-            <a href="" class="social-footer__item">
-              <img src="img/icon/odnoklassniki.png" alt="">
-            </a>
-          </div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__payments">
+							<img src="img/icon/social-play.png" alt="">
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__widgets widgets-footer">
+							<div class="widgets-footer__column">
+								<img src="img/social-img.png" alt="">
+							</div>
+							<div class="widgets-footer__column">
+								<img src="img/social-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__botton">
+					<div class="footer__copy">©2015 Все права защищены.</div>
+					<div class="footer__social social-footer">
+						<a href="" class="social-footer__item">
+							<img src="img/icon/vk.png" alt="">
+						</a>
+						<a href="" class="social-footer__item">
+							<img src="img/icon/facebook.png" alt="">
+						</a>
+						<a href="" class="social-footer__item">
+							<img src="img/icon/instagram.png" alt="">
+						</a>
+						<a href="" class="social-footer__item">
+							<img src="img/icon/odnoklassniki.png" alt="">
+						</a>
+					</div>
 
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/wNumb.min.js"></script>
-  <script src="js/nouislider.min.js"></script>
-  <script src="js/script.js"></script>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/wNumb.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/spoller.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
