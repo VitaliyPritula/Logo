@@ -1,6 +1,19 @@
 /*=============================================================================================================*/
 .filter {
   border: 4px solid #72c9d4;
+  // .filter__content
+  &__content {
+    @media (max-width: 992px) {
+      display: none;
+      transform: translate(-100%);
+      transition: translate 0.9s;
+    }
+    &.current {
+      visibility: visible;
+      display: block;
+      transform: translate(0);
+    }
+  }
   // .filter__title
   &__title {
     padding: 25px 15px 5px 15px;
@@ -9,17 +22,46 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0px;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 992px) {
+      padding: 25px 15px 25px 15px;
+      &._active {
+        padding: 25px 15px 5px 15px;
+      }
+    }
   }
   // .filter__body
   // &__body {
+
   // }
   // .filter__section
   // &__section {
   // }
+  // .filter__footer
+  &__footer {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    @media (max-width: 479px) {
+      // justify-content: center;
+      display: block;
+      padding: 0 10px 10px 3px;
+    }
+  }
+  // .filter__btn
+  &__btn {
+    margin: 0px 15px 0 0;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
 }
 .section-filter {
   padding: 15px;
   border-bottom: 1px solid #72c9d4;
+  &:last-child {
+    border: none;
+  }
   // .section-filter__title
   &__title {
     color: #36949f;
@@ -120,8 +162,8 @@
     }
   }
   // .price-filter__values
-  &__values {
-  }
+  // &__values {
+  // }
 }
 .values-price-filter {
   display: flex;

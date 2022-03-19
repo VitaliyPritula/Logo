@@ -403,20 +403,19 @@ if (isMobile.any()) {
 
 let menuPageBurger = document.querySelector(".menu-page__burger");
 let menuPageBody = document.querySelector(".menu-page__body");
+let menuPage = document.querySelector(".menu-page");
 menuPageBurger.addEventListener("click", function (e) {
   menuPageBurger.classList.toggle("_active");
   menuPageBody.classList.toggle("_active");
+  menuPage.classList.toggle("_active");
 });
+
 /*======Плавное выадающее меню на сатегории==============================================================================*/
 var searchSelect = document.getElementsByClassName("search-page__title")[0];
 var categorieSearch = document.getElementsByClassName("categories-search")[0];
-searchSelect.addEventListener(
-  "click",
-  function (e) {
-    categorieSearch.classList.toggle("current");
-  },
-  false
-);
+searchSelect.addEventListener("click", function (e) {
+  categorieSearch.classList.toggle("active");
+});
 
 /*=====работа с выбранным checkbox======================================================================================*/
 let checkboxCategories = document.querySelectorAll(".checkbox");
@@ -531,13 +530,24 @@ priceEnd.addEventListener("change", setPriceValues);
 function setPriceValues() {
   let priceStartValue;
   let priceEndValue;
-  if (priceStart.value != '') {
+  if (priceStart.value != "") {
     priceStartValue = priceStart.value;
   }
-  if (priceEnd.value != '') {
+  if (priceEnd.value != "") {
     priceEndValue = priceEnd.value;
   }
   priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
 }
 /*=============================================================================================================*/
 // spoller
+
+var btnMenuMobile = document.getElementsByClassName("filter__title")[0];
+var menuMobile = document.getElementsByClassName("filter__content")[0];
+
+btnMenuMobile.addEventListener(
+  "click",
+  function () {
+    menuMobile.classList.toggle("current");
+  },
+  false
+);
