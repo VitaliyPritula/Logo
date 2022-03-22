@@ -795,7 +795,7 @@ input {
   &__list {
     display: flex;
     align-items: center;
-    word-spacing: nowrap;
+    white-space: nowrap;
     li {
       padding: 0px 20px 0px 0px;
       margin: 0px 10px 0px 0px;
@@ -974,6 +974,8 @@ input {
 .menu-page__header {
   padding: 20px;
   display: flex;
+  z-index: 20;
+  position: relative;
   align-items: center;
 }
 .menu-page__title {

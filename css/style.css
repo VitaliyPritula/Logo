@@ -50,6 +50,9 @@
 .filter__btn:last-child {
   margin: 0px 0px 0px 0px;
 }
+.filter .btn {
+  padding: 0 20px;
+}
 
 .section-filter {
   padding: 15px;
@@ -243,6 +246,179 @@
   background: #e6e6e6 url("../img/icon/trash.png") center no-repeat;
 }
 
+/*=============================================================================================================*/
+.catalog__title {
+  font-family: "UniSans";
+  color: #dadada;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0px 0px 20px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+.catalog__actions {
+  margin: 0px 0px 15px 0px;
+}
+
+.actions-catalog {
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  align-items: center;
+}
+@media (min-width: 560px) {
+  .actions-catalog {
+    display: flex;
+  }
+}
+@media (max-width: 560px) {
+  .actions-catalog {
+    margin: 0 -15px 20px;
+  }
+}
+@media (min-width: 560px) {
+  .actions-catalog__order {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 560px) {
+  .actions-catalog__order {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+@media (min-width: 560px) {
+  .order-catalog {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+.order-catalog__label {
+  color: #333;
+  margin: 0px 17px 0px 0px;
+  font-size: 14px;
+  font-weight: 900;
+}
+@media (max-width: 560px) {
+  .order-catalog__label {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+.view-catalog {
+  display: flex;
+}
+.view-catalog__item {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  margin: 0px 0px 0px 8px;
+}
+@media (max-width: 560px) {
+  .view-catalog__item {
+    margin: 0px 10px 0px 0px;
+  }
+}
+.view-catalog__item__grid {
+  background: #fff url("../img/icon/grid.png") center no-repeat;
+}
+.view-catalog__item__list {
+  background: #4da0b4 url("../img/icon/list-list.png") center no-repeat;
+}
+
+/*=============================================================================================================*/
+.navi-catalog {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+@media (min-width: 560px) {
+  .navi-catalog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10px 13px 16px;
+  }
+}
+.navi-catalog .custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 56px;
+  background-color: #ffffff;
+  border: 2px solid #f3f3f3;
+}
+.navi-catalog .select-selected {
+  color: #666;
+  font-size: 14px;
+  padding: 8px 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 560px) {
+  .show-catalog {
+    display: flex;
+    align-items: center;
+  }
+}
+.show-catalog__label {
+  color: #333;
+  margin: 0px 17px 0px 0px;
+  font-size: 14px;
+  font-weight: 900;
+}
+@media (max-width: 560px) {
+  .show-catalog__label {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+/*=============================================================================================================*/
+.pagging {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagging__arrow {
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  background: url("../img/icon/li-arrow-grey.png") 0 0/100% no-repeat;
+}
+@media (min-width: 992px) {
+  .pagging__arrow:hover {
+    background: url("../img/icon/sl_arrow-left.svg") 0 0/100% no-repeat;
+  }
+}
+.pagging__arrow:last-child {
+  transform: rotate(180deg);
+}
+.pagging__list {
+  margin: 0px 35px;
+  display: flex;
+}
+.pagging__item {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+}
+.pagging__item._active {
+  color: #ffffff;
+  background-color: #fd8424;
+}
+
 @font-face {
   font-family: "UniSans";
   src: url("../fonts/UniSans-Trial-Regular.woff") format("truetype");
@@ -260,6 +436,7 @@
   height: 30px;
   display: block;
 }
+
 input {
   border: none;
   width: 100%;
@@ -342,6 +519,77 @@ input {
 }
 .checkbox__text span {
   margin: 0px 0px 0px 35px;
+}
+
+/*=============================================================================================================*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 260px;
+}
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #666 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #666 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #666;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select-selected {
+  color: #0097ac;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -1359,6 +1607,7 @@ input {
   color: #333;
   font-weight: 900;
 }
+
 .logo-footer {
   display: inline-block;
   margin: 0px 0px 30px 0px;
@@ -2279,7 +2528,7 @@ input {
 .breadcrums__list {
   display: flex;
   align-items: center;
-  word-spacing: nowrap;
+  white-space: nowrap;
 }
 .breadcrums__list li {
   padding: 0px 20px 0px 0px;
@@ -2474,6 +2723,8 @@ input {
 .menu-page__header {
   padding: 20px;
   display: flex;
+  z-index: 20;
+  position: relative;
   align-items: center;
 }
 
