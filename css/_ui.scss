@@ -103,13 +103,13 @@ input {
   width: 260px;
 
   select {
-    display: none; /*hide original SELECT element:*/
+    display: none; /*Скрыть оригинальный элемент выбора:*/
   }
 }
 .select-selected {
   background-color: #fff;
 }
-/*style the arrow inside the select element:*/
+/*Стиль стрелки внутри элемента выбора:*/
 .select-selected:after {
   position: absolute;
   content: "";
@@ -120,12 +120,12 @@ input {
   border: 6px solid transparent;
   border-color: #666 transparent transparent transparent;
 }
-/*point the arrow upwards when the select box is open (active):*/
+/* Укажите стрелку вверх, когда поле выбора открыта (Active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #666 transparent;
   top: 7px;
 }
-/*style the items (options), including the selected item:*/
+/* СТИЛЬЭЛЕМЕНТОВ (ОПЦИИ), ВКЛЮЧАЯ ВЫБРАННЫЙ ЭЛЕМЕНТ: */
 .select-items div,
 .select-selected {
   color: #666;
@@ -138,7 +138,7 @@ input {
 .select-selected {
   color: #0097ac;
 }
-/*style items (options):*/
+/* Стиль элементов (опции): */
 .select-items {
   position: absolute;
   background-color: #fff;
@@ -148,11 +148,53 @@ input {
   z-index: 10;
 }
 
-/*hide the items when the select box is closed:*/
+/* Скрыть Элементы, Когда Поле выбрать закрыту: */
 .select-hide {
   display: none;
 }
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*============================
+работа с +- для товара*/
+.quantity {
+  width: 120px;
+  height: 33px;
+  display: flex;
+  // .quantity__button
+  &__button {
+    position: relative;
+    cursor: pointer;
+    line-height: 24px;
+    width: 24px;
+    margin: 0 6px;
+    height: 24px;
+    user-select: none;
+    background: url("../img/icon/li-arrow-grey.png") 0 0 / 100% no-repeat;
+    @media (min-width: 992px){
+      &:hover{
+        background: url("../img/icon/sl_arrow-left.svg") 0 0 / 100% no-repeat;
+
+      }
+    }
+    &-plus {
+      top: -3px;
+      transform: rotate(180deg);
+    }
+  }
+  input {
+    appearance: none;
+    text-align: center;
+    width: 50px;
+    height: 33px;
+    font-size: 16px;
+    color: #999999;
+    line-height: 24px;
+    border: 2px solid #e5e5e5;
+  }
+  // .body-product__actions
+  // &__actions {
+  // }
 }

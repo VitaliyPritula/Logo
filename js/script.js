@@ -402,12 +402,25 @@ if (isMobile.any()) {
 }
 
 let menuPageBurger = document.querySelector(".menu-page__burger");
-let menuPageBody = document.querySelector(".menu-page__body");
-let menuPage = document.querySelector(".menu-page");
 menuPageBurger.addEventListener("click", function (e) {
   menuPageBurger.classList.toggle("_active");
-  menuPageBody.classList.toggle("_active");
-  menuPage.classList.toggle("_active");
+});
+
+/*========slideTogl=====================================================================================================*/
+let elem = document.querySelector(".menu-page__list");
+
+window.addEventListener("load", () => {
+  let heightElem = elem.offsetHeight;
+  elem.style.height = "0px";
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    elem.classList.toggle("active");
+    if (btn.classList.contains("active")) {
+      elem.style.height = heightElem + "px";
+    } else {
+      elem.style.height = "0px";
+    }
+  });
 });
 
 /*======Плавное выадающее меню на сатегории==============================================================================*/
@@ -506,6 +519,27 @@ var swiper = new Swiper(".brandsSlider", {
     992: {
       slidesPerView: 5,
     },
+  },
+});
+
+/*=============================================================================================================*/
+// subSliser product
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 2,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  // loop: true,
+  spaceBetween: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
   },
 });
 
@@ -628,3 +662,22 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+/*=============================================================================================================*/
+// quantiti работа с +- для товара
+function increaseCount(e, el) {
+  var input = el.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+function decreaseCount(e, el) {
+  var input = el.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
