@@ -1963,6 +1963,66 @@ input {
   font-weight: 300;
 }
 
+/*=============================================================================================================*/
+.filters-content {
+  display: flex;
+}
+.filters__button {
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #72c9d4;
+  padding: 0px 30px;
+}
+.filters__button span {
+  font-weight: 900;
+  border-bottom: 1px dashed;
+}
+.filters__button.active {
+  color: #fff;
+  background-color: #72c9d4;
+}
+.filters__button.active span {
+  border-bottom: 1px dashed transparent;
+}
+.filters .content {
+  display: none;
+}
+.filters .content.active.content {
+  display: block;
+}
+.filters .content.active.content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+}
+.filters .content.active.content p:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.info-product__body {
+  background-color: #fafafa;
+  padding: 35px 30px;
+}
+.info-product__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.info-product__table tr {
+  border-bottom: 3px solid #ededed;
+}
+.info-product__table td {
+  padding: 15px 0;
+  width: 50%;
+}
+.info-product__value {
+  color: #999;
+  font-weight: 300;
+}
+
 .menu-page__list {
   transition: height 0.5s linear;
   overflow: hidden;
@@ -3600,4 +3660,4 @@ input {
   left: 5px;
   top: 12px;
   line-height: 1;
-}
+}/*# sourceMappingURL=style.css.map */
