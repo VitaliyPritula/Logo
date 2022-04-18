@@ -292,6 +292,11 @@
     color: #72c9d4;
     padding: 0px 30px;
     cursor: pointer;
+    @media (max-width: 768px) {
+      flex: 1 1 auto;
+      padding: 0px 15px;
+    }
+
     span {
       display: inline-block;
       font-weight: 900;
@@ -310,7 +315,8 @@
     background-color: #fafafa;
     padding: 35px 30px;
     @media (max-width: 768px) {
-      padding: 25px 15px;
+      padding: 25px 5px;
+      flex: 1 1 100%;
     }
   }
   // .info-product__table

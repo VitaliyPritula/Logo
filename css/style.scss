@@ -1,5 +1,6 @@
 @import "_ui";
 @import "_catalog";
+@import "_checkout";
 @import "_fonts";
 @import "_footer";
 @import "_header";
@@ -21,9 +22,8 @@ a {
 
 body {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 14px;
 }
-
 ul,
 li {
   list-style: none;
@@ -816,8 +816,11 @@ input {
   }
   // .breadcrums__item
   &__item {
-    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
     font-weight: 300;
+    font-family: "Roboto";
   }
 }
 
