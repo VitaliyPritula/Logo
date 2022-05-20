@@ -113,7 +113,7 @@ if (spollersArray.length > 0) {
   }
 }
 // function _slideUp
-let _slideUp = (target, duration = 500) => {
+let _slideUp = (target, duration = 100) => {
   if (!target.classList.contains('_slide')) {
     target.classList.add('_slide');
     target.style.transitionProperty = 'height, margin, padding';
@@ -141,7 +141,7 @@ let _slideUp = (target, duration = 500) => {
   }
 }
 
-let _slideDown = (target, duration = 500) => {
+let _slideDown = (target, duration = 100) => {
   if (!target.classList.contains("_slide")) {
     target.classList.add("_slide");
     if (target.hidden) {
